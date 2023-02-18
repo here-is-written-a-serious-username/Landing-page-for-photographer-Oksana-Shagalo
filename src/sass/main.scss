@@ -1,29 +1,16 @@
-// @import './utils/variables';
+@import './utils/variables';
 
-// @import './base/common';
-// @import './base/container';
+@import './base/base';
 
-// @import './utils/visually-hidden'; 
+// @import './utils/visually-hidden';
 
-// @import './components/modal-btn';
-// @import './components/social-links-list';
-// @import './components/overtitle';
+// @import './components/button';
+// @import './components/logo';
 // @import './components/title';
-// @import './components/description';
 // @import './components/modal-w';
+// @import './components/mobile-menu';
 
-// @import './layout/header';
-// @import './layout/hero';
-// @import './layout/about';
-// @import './layout/price';
-// @import './layout/old-school';
-// @import './layout/barbers';
-// @import './layout/gallery';
-// @import './layout/booking';
+@import './layout/header';
+@import './layout/hero';
 
-// @import './layout/contacts';
 // @import './layout/footer';
-
-.footer{
-    font-size: 48px;
-}

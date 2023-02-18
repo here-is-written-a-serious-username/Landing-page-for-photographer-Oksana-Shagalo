@@ -1,0 +1,93 @@
+.main_page {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapp {
+    height: 100vh;
+}
+
+.hero {
+    max-width: 1440px;
+    height: 100%;
+    min-height: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    // padding-top: 167px;
+    // padding-bottom: 261px;
+
+    background-image: linear-gradient(147.39deg, rgba(0, 0, 0, 0.5) 0.49%, rgba(0, 0, 0, 0.352372) 12.76%, rgba(0, 0, 0, 0.213236) 24.32%, rgba(0, 0, 0, 0.155654) 29.11%, rgba(0, 0, 0, 0.07) 36.23%, rgba(0, 0, 0, 0.07) 39.95%), url(../img/image.jpg);
+    background-size: 1044px auto;
+    background-repeat: no-repeat;
+    background-position: top right;
+
+    display: flex;
+    align-items: center;
+
+}
+
+.hero-cont {
+    margin-left: 135px;
+    width: 618px;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero__overtitle {
+    margin-bottom: 4px;
+
+    font-family: $secondary-font;
+    font-size: 48px;
+    line-height: calc(70px/48px);
+    color: $accent-color;
+}
+
+.hero__title {
+    margin-bottom: 4px;
+
+    font-family: $secondary-font;
+    font-size: 96px;
+    line-height: calc(140px/96px);
+}
+
+.hero__description {
+    margin-bottom: 24px;
+
+    background: linear-gradient(160.6deg, rgba(0, 0, 0, 0.2) 46.17%, rgba(0, 0, 0, 0) 97.12%), rgba(100, 100, 100, 0.3);
+    backdrop-filter: blur(15px);
+
+    border-radius: 10px;
+    padding: 24px 50px;
+    font-size: 24px;
+    line-height: calc(33px/24px);
+}
+
+.hero__btn {
+    align-self: center;
+    padding: 11px 102px;
+
+    background-color: $btn-background-color;
+
+    font-size: 16px;
+    line-height: calc(23px/16px);
+
+    border-style: solid;
+    border-width: 8px 12px;
+    border-color: $def-color;
+    border-radius: 2px;
+
+    &:hover,
+    &:focus {
+        border-color: $hov-color;
+    }
+
+    &:active {
+        border-color: $act-color;
+    }
+
+    &:disabled {
+        border-color: $dis-color;
+    }
+
+}
