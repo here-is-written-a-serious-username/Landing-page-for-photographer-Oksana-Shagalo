@@ -1,0 +1,38 @@
+.portfolio-list-wrap {
+    padding: 50px 0;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(22, 24, 24, 0.2) 21.85%, rgba(56, 60, 60, 0.15) 49.8%, rgba(93, 100, 100, 0) 74.37%), rgba(189, 157, 118, 0.35);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+}
+
+.portfolio-list__item+.portfolio-list__item {
+    margin-top: 8px;
+}
+
+.portfolio-list__link {
+    font-size: 20px;
+    line-height: calc(27px/20px);
+    position: relative;
+
+    &:active {
+        background: linear-gradient(90.14deg, rgba(159, 159, 159, 0.48) 0.12%, rgba(172, 172, 172, 0.416) 12%, rgba(187, 187, 187, 0.341) 25.92%, rgba(203, 203, 203, 0.2585) 41.23%, rgba(255, 255, 255, 0) 89.2%);
+        border-radius: 3px;
+
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: 12px;
+            height: 2px;
+            width: 30px;
+            margin-left: 12px;
+
+            background-color: currentColor;
+            border-radius: 2px;
+        }
+    }
+
+    &:hover,
+    &:focus {
+        color: $hov-color;
+    }
+}

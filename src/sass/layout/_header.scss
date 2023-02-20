@@ -23,7 +23,8 @@
     font-size: 32px;
     line-height: calc(47px/32px);
 
-    &:hover {
+    &:hover,
+    &:focus {
         color: $hov-color;
     }
 
@@ -34,15 +35,11 @@
 
 .nav-list {
     display: flex;
-    // align-items: center;
 
     font-size: 16px;
     line-height: calc(22px/16px);
 }
 
-// .nav-list__item+.nav-list__item {
-//     margin-left: 64px;
-// }
 .nav-list__item {
 
     &:first-child {
@@ -53,7 +50,6 @@
         margin-left: 662px;
     }
 }
-
 
 .nav-list__link {
 
@@ -84,8 +80,8 @@
     &:active {
         color: $act-color;
     }
-}
 
-.contact-number__icon {
-    fill: currentColor;
+    .contact-number__icon {
+        fill: currentColor;
+    }
 }
