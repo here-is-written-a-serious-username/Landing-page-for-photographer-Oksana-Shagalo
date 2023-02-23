@@ -59,30 +59,7 @@
 }
 
 .hero__btn {
-    align-self: center;
-    padding: 11px 102px;
-
-    background-color: $btn-background-color;
-
-    font-size: 16px;
-    line-height: calc(23px/16px);
-
-    border-style: solid;
+    padding: 12px 102px;
     border-width: 8px 12px;
-    border-color: $accent-color;
-    border-radius: 2px;
-
-    &:hover,
-    &:focus {
-        border-color: $hov-color;
-    }
-
-    &:active {
-        border-color: $act-color;
-    }
-
-    &:disabled {
-        border-color: $dis-color;
-    }
-
+    align-self: center;
 }

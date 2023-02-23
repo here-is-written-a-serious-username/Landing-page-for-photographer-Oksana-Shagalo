@@ -1,0 +1,27 @@
+.btn {
+    background-color: $btn-background-color;
+
+    font-family: $main-font;
+    font-size: 16px;
+    line-height: calc(23px/16px);
+    letter-spacing: 0.063em;
+
+    border-style: solid;
+    border-color: $accent-color;
+    border-radius: 2px;
+
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        border-color: $hov-color;
+    }
+
+    &:active {
+        border-color: $act-color;
+    }
+
+    &:disabled {
+        border-color: $dis-color;
+    }
+}

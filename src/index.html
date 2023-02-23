@@ -47,7 +47,7 @@
             <h1 class="hero__title" lang="en">Oksana Shagalo</h1>
             <p class="hero__description">Я прагну зупинити мить, де ми відчуваємо себе щасливими, закоханими,
               натхненними та справжніми.</p>
-            <a class="hero__btn" href="#">Замовити</a>
+            <a class="btn hero__btn" href="#order">Замовити</a>
           </div>
         </div>
       </section>
@@ -103,7 +103,7 @@
 
     <section class="section" id="price">
       <div class="container">
-        <div class="title-wrap">
+        <div class="title-wrap price-title-wrap">
           <h2 class="title" lang="en">Price</h2>
         </div>
         <ul class="price-list">
@@ -155,7 +155,71 @@
     </section>
 
     <section class="section" id="stages">
+      <div class="title-wrap">
+        <h2 class="title stages__title" lang="en">Stages of work</h2>
+      </div>
       <div class="container">
+        <ul class="stages-list">
+          <div class="stages-list-left-side">
+            <li class="stages-list__item">
+              <p class="stages-list__item-count">1</p>
+              <p class="stages-list__item-about">Знайомство/<br>Референси</p>
+            </li>
+            <li class="stages-list__item">
+              <p class="stages-list__item-count">2</p>
+              <p class="stages-list__item-about">Проводимо зйомку</p>
+            </li>
+          </div>
+          <div class="stages-list-right-side">
+            <li class="stages-list__item">
+              <p class="stages-list__item-count">3</p>
+              <p class="stages-list__item-about">Обробка фото</p>
+            </li>
+            <li class="stages-list__item">
+              <p class="stages-list__item-count">4</p>
+              <p class="stages-list__item-about">Передача матеріалу/<br>Відгук</p>
+            </li>
+          </div>
+        </ul>
+        <div class="stages__img-wrap">
+          <img class="stages__img" src="./img/stages.jpg" width="390" height="545"
+            alt="#Photographеr #model #human #photosession #Blackandwhite #girl #portrait #девушка #фотосессия #фотограф #портрет">
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="order">
+      <div class="container">
+        <div class="title-wrap">
+          <h2 class="title order__title" lang="en">Write to me and I will shoot your story</h2>
+        </div>
+
+        <div class="container-backdrop">
+          <div class="form-backdrop">
+
+            <form class="form" action="">
+              <h3 class="form__title">Залишити Заявку</h3>
+              <div class="form__fields-wrap">
+                <label class="form__field">
+                  <input class="form__input" name="user_name" type="text" required="" autocomplete="off"
+                    placeholder=" ">
+                  <span class="form__label">Ваше ім’я</span>
+                </label>
+                <label class="form__field">
+                  <input class="form__input" name="user_tel" type="tel" required="" autocomplete="off" placeholder=" ">
+                  <span class="form__label">Ваш номер</span>
+                </label>
+                <label class="form__field">
+                  <input class="form__input" name="user_e-mail" type="email" autocomplete="off" placeholder=" ">
+                  <span class="form__label">Ваш e-mail</span>
+                </label>
+              </div>
+
+              <button class="btn submit-btn" type="submit">Замовити</button>
+
+            </form>
+          </div>
+        </div>
 
       </div>
     </section>

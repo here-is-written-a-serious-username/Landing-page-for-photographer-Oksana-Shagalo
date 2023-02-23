@@ -1,0 +1,107 @@
+.order__title {
+    font-size: 40px;
+    line-height: calc(54px/40px);
+}
+
+.container-backdrop {
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+.form-backdrop {
+    padding: 66px 0;
+    background-image: url(../img/order.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 5px;
+}
+
+.form {
+    margin: 0 auto;
+    width: 770px;
+    padding: 62px 30px;
+    background: rgba(24, 23, 23, 0.3);
+    backdrop-filter: blur(17.5px);
+    border-radius: 10px;
+}
+
+.form__title {
+    text-align: center;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: calc(33px/24px);
+    letter-spacing: 0.02em;
+    color: $accent-color;
+    margin-bottom: 36px;
+}
+
+.form__fields-wrap {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 36px;
+}
+
+.form__field {
+    display: block;
+    position: relative;
+}
+
+.form__input {
+    max-width: 220px;
+    margin: 0;
+    padding: 14px 18px;
+
+    background: $background-color;
+    border: 1px solid $accent-color;
+    border-radius: 5px;
+    cursor: pointer;
+
+    font-size: 16px;
+    line-height: 1.24;
+    color: inherit;
+
+    transition: border-color 250ms linear;
+
+    .form__field:hover & {
+        border-color: $hov-color;
+    }
+
+    .form__field:focus-within>& {
+        outline: none;
+        border-color: $act-color;
+    }
+}
+
+.form__label {
+    position: absolute;
+    top: 50%;
+    left: 18px;
+    transform: translateY(-50%);
+    transition: transform 250ms linear, color 250ms linear;
+
+    font-size: 16px;
+    line-height: 1.24;
+    letter-spacing: 0.063em;
+
+    .form__field:hover & {
+        color: $hov-color;
+    }
+
+    .form__field:focus-within>& {
+        transform: translateY(-48px);
+        color: $act-color;
+    }
+
+    .form__input:not(:placeholder-shown)+& {
+        transform: translateY(-48px);
+    }
+}
+
+.submit-btn {
+    display: block;
+    margin: 0 auto;
+    padding: 7px 60px 6px 60px;
+    border-width: 7px 9px;
+    color: inherit;
+}

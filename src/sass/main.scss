@@ -4,10 +4,9 @@
 
 // @import './utils/visually-hidden';
 
-// @import './components/button';
-// @import './components/logo';
+@import './components/btn';
 @import './components/title';
-// @import './components/modal-w';
+// @import './components/logo';
 // @import './components/mobile-menu';
 
 @import './layout/header';
@@ -15,5 +14,6 @@
 @import './layout/about-me';
 @import './layout/portfolio';
 @import './layout/price';
-
-// @import './layout/footer';
+@import './layout/stages';
+@import './layout/order';
+@import './layout/footer';
