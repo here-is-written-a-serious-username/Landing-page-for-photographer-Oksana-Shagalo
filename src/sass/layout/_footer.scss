@@ -1,0 +1,45 @@
+.footer {
+    padding: 60px 0;
+    background: #000000;
+
+    .container {
+        display: flex;
+    }
+}
+
+.footer__nav-cont {
+    display: flex;
+    align-items: baseline;
+}
+
+.footer__logo {
+    margin-right: 186px;
+}
+
+.footer__nav-list {
+    margin-right: 244px;
+}
+
+.footer-nav-list__item+.footer-nav-list__item {
+    margin-top: 20px;
+}
+
+.footer-nav-list__link {
+    font-family: $secondary-font;
+    font-size: 16px;
+    line-height: calc(22px/16px);
+}
+
+
+.social-list__item {
+    font-size: 0;
+}
+
+.social-list__icon {
+    fill: #F1F1F1;
+}
+
+
+.contact-cont {
+    margin-left: auto;
+}
