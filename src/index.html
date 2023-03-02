@@ -2,9 +2,9 @@
 <html lang="uk">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,7 +24,7 @@
     <header class="header">
       <div class="container header-cont">
         <nav class="header__nav-cont">
-          <a class="logo header__logo" href="#" lang="en">Oksana Shagalo</a></li>
+          <a class="logo header__logo" href="#" lang="en">Oksana Shagalo</a>
           <ul class="header__nav-list">
             <li class="header-nav-list__item"><a class="nav-list__link" href="#portfolio">Портфоліо</a></li>
             <li class="header-nav-list__item"><a class="nav-list__link" href="#price">Прайс</a></li>
@@ -36,9 +36,46 @@
             <use href="./img/sprite.svg#phone"></use>
           </svg>
           +38 099 214 65 63</a>
-      </div>
-    </header>
 
+        <button type="button" aria-expanded="false" aria-controls="mobil-menu"
+          aria-label="open or close the mobile menu" class="btn-mobil-menu js-toggle-mobil-menu">
+          <div id="hamburger" class="hamburglar">
+
+            <div class="burger-icon">
+              <div class="burger-container">
+                <span class="burger-bun-top"></span>
+                <span class="burger-filling"></span>
+                <span class="burger-bun-bot"></span>
+              </div>
+            </div>
+
+            <!-- svg ring containter -->
+            <div class="burger-ring">
+              <svg class="svg-ring">
+                <path class="path" fill="none" stroke-miterlimit="10" stroke-width="4"
+                  d="M 34 2 C 16.3 2 2 16.3 2 34 s 14.3 32 32 32 s 32 -14.3 32 -32 S 51.7 2 34 2" />
+              </svg>
+            </div>
+            <!-- the masked path that animates the fill to the ring -->
+
+            <svg width="0" height="0">
+              <mask id="mask">
+                <path xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#ff0000" stroke-miterlimit="10"
+                  stroke-width="4" d="M 34 2 c 11.6 0 21.8 6.2 27.4 15.5 c 2.9 4.8 5 16.5 -9.4 16.5 h -4" />
+              </mask>
+            </svg>
+            <div class="path-burger">
+              <div class="animate-path">
+                <div class="path-rotation"></div>
+              </div>
+            </div>
+
+          </div>
+        </button>
+      </div>
+
+    </header>
+    <!-- 
     <div class="wrap-hero">
       <section class="hero wrap-bgr-img">
         <div class="container">
@@ -51,11 +88,11 @@
           </div>
         </div>
       </section>
-    </div>
+    </div> -->
 
   </div>
 
-  <main>
+  <!-- <main>
     <section class="section" id="about-me">
       <div class="about-me wrap-bgr-img">
         <div class="container">
@@ -287,11 +324,10 @@
 
     </div>
     </div>
-  </footer>
+  </footer> -->
 
 
-
-
+  <script src="./js/btnMobilMenu.js" type="module"></script>
   <!-- <script src="index.js" type="module"></script> -->
 </body>
 
