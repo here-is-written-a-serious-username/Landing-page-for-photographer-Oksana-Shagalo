@@ -11,6 +11,7 @@ btnMobilMenu.addEventListener('keydown', toggleMenuKeyDown);
 window.matchMedia('(min-width: 768px)').addEventListener('change', e => {
     if (!e.matches) return;
     MobilMenu.classList.remove('is-open');
+    document.body.classList.remove("modal-open");
     IconBtnMobilMenu.classList.remove('is-open');
     IconBtnMobilMenu.classList.remove('is-closed');
     btnMobilMenu.setAttribute('aria-expanded', false);

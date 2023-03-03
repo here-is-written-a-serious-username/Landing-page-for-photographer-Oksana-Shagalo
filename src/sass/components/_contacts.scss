@@ -20,4 +20,27 @@
     .contacts-icon {
         fill: currentColor;
     }
+
+
+    @media screen and (max-width: 767px) {
+        position: absolute;
+        z-index: 2;
+        top: 366px;
+        left: 50%;
+        transform: translateX(-50%) scale(0);
+        pointer-events: none;
+        opacity: 0;
+        transition: scale 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    body.modal-open {
+        .contacts-link {
+            opacity: 1;
+            transform: translateX(-50%) scale(1);
+            pointer-events: all;
+        }
+    }
 }
