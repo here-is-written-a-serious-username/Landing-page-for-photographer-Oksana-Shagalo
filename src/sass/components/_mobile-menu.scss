@@ -460,10 +460,9 @@ $scale: 1; // icon scale 68/68 default
         left: 0;
         width: 100%;
         height: 100%;
-        // background-color: $background-color;
-        background-color: tomato;
+        background-color: $background-color;
+        // background-color: tomato;
         opacity: 0;
-        // transform: translateY(-100%);
         transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
         pointer-events: none;
         overflow-y: scroll;
@@ -475,8 +474,6 @@ $scale: 1; // icon scale 68/68 default
         }
     }
 }
-
-
 
 
 // .header__nav-list {
