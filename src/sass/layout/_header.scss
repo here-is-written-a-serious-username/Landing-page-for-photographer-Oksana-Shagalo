@@ -1,10 +1,21 @@
 .header {
     position: relative;
-    z-index: 10;
+    // z-index: 1;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
     @media screen and (max-width: 767px) {
         padding: 10px 0;
+
+        &::before {
+            content: '';
+            position: absolute;
+            z-index: 2;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: $background-color;
+        }
     }
 
     @media screen and (min-width: 768px) {
@@ -33,9 +44,11 @@
 
 .header__logo {
 
-    // @media screen and (min-width: 768px)
-    //     position: absolute;
-    //     left: 50%;
+    @media screen and (max-width: 767px) {
+        position: relative;
+        z-index: 3;
+        font-size: 38px;
+    }
 
     @media screen and (min-width: 768px) {
         position: absolute;
@@ -49,42 +62,27 @@
 }
 
 .header__nav-list {
+    display: flex;
 
     @media screen and (max-width: 767px) {
-        position: absolute;
-        z-index: 2;
-        top: 144px;
-        left: 50%;
-        display: flex;
         flex-direction: column;
+        justify-content: center;
         align-items: center;
-        transform: translateX(-50%) scale(0);
-        pointer-events: none;
-        opacity: 0;
-        transition: scale 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
 
-    @media screen and (min-width: 768px) {
-        display: flex;
-    }
+    // @media screen and (min-width: 768px) {
+    //     display: flex;
+    // }
 }
-
-@media screen and (max-width: 767px) {
-    body.modal-open {
-        .header__nav-list {
-            opacity: 1;
-            transform: translateX(-50%) scale(1);
-            pointer-events: all;
-        }
-    }
-}
-
 
 
 .header-nav-list__item {
+
     @media screen and (max-width: 767px) {
         &+& {
-            margin-top: 30px;
+            margin-top: 20px;
         }
     }
 
@@ -106,14 +104,8 @@
     }
 }
 
-// @media screen and (min-width: 480px) {
-//     width: 480px;
-// }
-
-// @media screen and (min-width: 768px) {
-//     width: 768px;
-// }
-
-// @media screen and (min-width: 1200px) {
-//     width: 1200px;
-// }
+.header__contacts-link {
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+}

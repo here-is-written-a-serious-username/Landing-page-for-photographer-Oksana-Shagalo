@@ -7,6 +7,8 @@ $scale: 1; // icon scale 68/68 default
     @media screen and (max-width: 767px) {
         padding: 0;
         border: none;
+        position: relative;
+        z-index: 3;
 
         .hamburglar {
             transform: scale($scale);
@@ -450,20 +452,70 @@ $scale: 1; // icon scale 68/68 default
 
 
 #mobil-menu {
-    position: absolute;
-    z-index: -1;
-    top: calc(100%);
-    height: 100vh;
-    width: 100%;
-    background-color: $background-color;
-    opacity: 0;
-    transform: translateY(-100%);
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    pointer-events: none;
+    @media screen and (max-width: 767px) {
+        position: fixed;
+        z-index: 1;
+        // top: 0;
+        top: calc(88px - 100%);
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        // background-color: $background-color;
+        background-color: tomato;
+        opacity: 0;
+        // transform: translateY(-100%);
+        transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        pointer-events: none;
+        overflow-y: scroll;
 
-    &.is-open {
-        opacity: 0.8;
-        transform: translateY(0%);
-        pointer-events: all;
+        &.is-open {
+            opacity: 0.8;
+            transform: translateY(100%);
+            pointer-events: all;
+        }
     }
 }
+
+
+
+
+// .header__nav-list {
+
+//     @media screen and (max-width: 767px) {
+//         position: absolute;
+//         z-index: 2;
+//         top: 144px;
+//         left: 50%;
+//         display: flex;
+//         flex-direction: column;
+//         align-items: center;
+//         transform: translateX(-50%) scale(0);
+//         pointer-events: none;
+//         opacity: 0;
+//         transition: scale 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+//     }
+
+//     @media screen and (min-width: 768px) {
+//         display: flex;
+//     }
+// }
+
+
+
+
+
+// @media screen and (max-width: 767px) {
+//     body.modal-open {
+//         .contacts-link {
+//             opacity: 1;
+//             transform: translateX(-50%) translateY(0) scale(1);
+//             pointer-events: all;
+//         }
+
+//         .header__nav-list {
+//             opacity: 1;
+//             transform: translateX(-50%) scale(1);
+//             pointer-events: all;
+//         }
+//     }
+// }
