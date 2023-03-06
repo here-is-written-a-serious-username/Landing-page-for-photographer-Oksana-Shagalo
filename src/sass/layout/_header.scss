@@ -99,6 +99,12 @@
     }
 }
 
+.header-nav-list__link {
+    @media screen and (max-width: 767px) {
+        font-size: 22px;
+    }
+}
+
 .header-nav-list__item-contacts {
     @media screen and (min-width: 768px) {
         display: none;
