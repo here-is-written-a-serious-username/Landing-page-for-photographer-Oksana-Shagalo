@@ -456,7 +456,7 @@ $scale: 1; // icon scale 68/68 default
         position: fixed;
         z-index: 1;
         // top: 0;
-        top: calc(88px - 100%);
+        top: calc(-100%);
         left: 0;
         width: 100vw;
         height: 100vh;
