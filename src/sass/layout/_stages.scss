@@ -1,6 +1,13 @@
 #stages {
     .title-wrap {
-        margin-bottom: 146px;
+
+        @media screen and (max-width: 1199px) {
+            margin-bottom: 60px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            margin-bottom: 146px;
+        }
     }
 
     .container {
@@ -8,17 +15,46 @@
     }
 }
 
+.stages-cont {
+    @media screen and (max-width: 1199px) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
 .stages-list {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 248px;
+
+    @media screen and (max-width: 1199px) {
+        margin-bottom: 60px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 248px;
+    }
+}
+
+.stages-list-left-side {
+    @media screen and (max-width: 1199px) {
+        margin-bottom: 60px;
+    }
 }
 
 .stages-list__item {
     display: flex;
     align-items: baseline;
-    align-items: center;
-    margin-bottom: 80px;
+
+    @media screen and (max-width: 1199px) {
+        &+& {
+            margin-top: 60px;
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 80px;
+    }
 
     .stages-list__item-count {
         display: flex;
@@ -44,21 +80,30 @@
 }
 
 .stages__img-wrap {
-    position: absolute;
-    top: -65px;
-    left: 50%;
-    transform: translateX(-195px);
+
+    @media screen and (max-width: 1199px) {
+        position: relative;
+        margin-bottom: 30px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        position: absolute;
+        top: -65px;
+        left: 50%;
+        transform: translateX(-195px);
+    }
 
     .stages__img {
         border-radius: 30px 2px;
         transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
+    // 390*545
     &::after {
         content: "";
         position: absolute;
-        width: 404px;
-        height: 545px;
+        width: calc(100% + 14px);
+        height: calc(100%);
         top: 14px;
         left: 0;
         z-index: -1;
