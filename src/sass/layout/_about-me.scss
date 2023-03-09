@@ -7,7 +7,7 @@
     background-position: top left;
 
     @media screen and (max-width: 767px) {
-        padding-top: 480px;
+        padding-top: 440px;
     }
 
     @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -28,7 +28,7 @@
     border-radius: 10px;
 
     @media screen and (max-width: 767px) {
-        padding: 60px 60px 50px 60px;
+        padding: 50px 40px 50px 50px;
         backdrop-filter: blur(8px);
     }
 
@@ -44,13 +44,28 @@
 }
 
 .about-me .title-wrap {
-    margin-bottom: 44px;
+
+    @media screen and (max-width: 767px) {
+        margin-bottom: 36px;
+    }
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 44px;
+    }
 }
 
 .about-me__title {
     font-size: 64px;
     line-height: calc(87px/64px);
     letter-spacing: 0;
+
+    @media screen and (max-width: 767px) {
+        font-size: 44px;
+    }
+
+    @media screen and (min-width: 768px) {
+        font-size: 64px;
+    }
 }
 
 .about-me__about {
