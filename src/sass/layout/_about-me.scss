@@ -38,12 +38,12 @@
     border-radius: 10px;
 
     @media screen and (max-width: 767px) {
-        padding: 40px 40px 40px 40px;
+        padding: 40px;
         backdrop-filter: blur(8px);
     }
 
     @media screen and (min-width: 768px) and (max-width: 1199px) {
-        padding: 60px 60px 50px 60px;
+        padding: 60px 60px 50px;
         backdrop-filter: blur(8px);
     }
 
