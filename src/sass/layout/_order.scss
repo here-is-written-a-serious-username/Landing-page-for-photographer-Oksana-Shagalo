@@ -4,26 +4,49 @@
 }
 
 .container-backdrop {
-    padding-left: 70px;
-    padding-right: 70px;
+    @media screen and (min-width: 1200px) {
+        padding-left: 70px;
+        padding-right: 70px;
+    }
 }
 
 .form-backdrop {
-    padding: 66px 0;
+
     background-image: url(../img/order.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 5px;
+
+    @media screen and (max-width: 767px) {
+        padding: 48px 24px;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        padding: 48px 14px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding: 66px 130px;
+    }
 }
 
 .form {
-    margin: 0 auto;
-    width: 770px;
-    padding: 62px 30px;
     background: rgba(24, 23, 23, 0.3);
-    backdrop-filter: blur(17.5px);
     border-radius: 10px;
+    backdrop-filter: blur(15px);
+
+    @media screen and (max-width: 767px) {
+        padding: 48px 24px;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        padding: 48px 14px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding: 62px 30px;
+    }
 }
 
 .form__title {
@@ -38,17 +61,29 @@
 
 .form__fields-wrap {
     display: flex;
-    justify-content: space-evenly;
     margin-bottom: 36px;
+
+    @media screen and (max-width: 767px) {
+        flex-direction: column;
+    }
+
+    @media screen and (min-width: 768px) {
+        justify-content: space-evenly;
+    }
 }
 
 .form__field {
     display: block;
     position: relative;
+
+    @media screen and (max-width: 767px) {
+        &+& {
+            margin-top: 30px;
+        }
+    }
 }
 
 .form__input {
-    max-width: 220px;
     margin: 0;
     padding: 14px 18px;
 
@@ -62,6 +97,10 @@
     color: inherit;
 
     transition: border-color 250ms linear;
+
+    @media screen and (min-width: 768px) {
+        max-width: 220px;
+    }
 
     .form__field:hover & {
         border-color: $hov-color;
@@ -100,8 +139,15 @@
 
 .submit-btn {
     display: block;
-    margin: 0 auto;
-    padding: 7px 60px 6px 60px;
     border-width: 7px 9px;
     color: inherit;
+
+    @media screen and (max-width: 767px) {
+        padding: 7px 48px 6px 48px;
+    }
+
+    @media screen and (min-width: 768px) {
+        padding: 7px 60px 6px 60px;
+        margin: 0 auto;
+    }
 }
