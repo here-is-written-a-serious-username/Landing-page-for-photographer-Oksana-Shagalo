@@ -141,6 +141,7 @@
     display: block;
     border-width: 7px 9px;
     color: inherit;
+    margin: 0 auto;
 
     @media screen and (max-width: 767px) {
         padding: 7px 48px 6px 48px;
@@ -148,6 +149,5 @@
 
     @media screen and (min-width: 768px) {
         padding: 7px 60px 6px 60px;
-        margin: 0 auto;
     }
 }
