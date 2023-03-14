@@ -34,7 +34,7 @@ function scroll(value) {
 
 
 
-// тимчасово
+// тимчасово поки пуста галерея
 const aaa = document.querySelectorAll('.portfolio-list__link');
 
 (() => {
@@ -45,3 +45,4 @@ const aaa = document.querySelectorAll('.portfolio-list__link');
 function bbb(e) {
     e.preventDefault();
 }
+// тимчасово поки пуста галерея
