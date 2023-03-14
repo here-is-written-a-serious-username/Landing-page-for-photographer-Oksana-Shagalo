@@ -26,11 +26,14 @@
           <a class="logo header__logo" href="#" lang="en">Oksana Shagalo</a>
           <div id="mobil-menu">
             <ul class="header__nav-list">
-              <li class="header-nav-list__item"><a class="nav-list__link header-nav-list__link" href="#portfolio">Портфоліо</a></li>
-              <li class="header-nav-list__item"><a class="nav-list__link header-nav-list__link" href="#price">Прайс</a></li>
-              <li class="header-nav-list__item"><a class="nav-list__link header-nav-list__link" href="#about-me">Про мене</a></li>
-              <li class="header-nav-list__item header-nav-list__item-contacts"><a class="nav-list__link header-nav-list__link"
-                  href="#contacts">Контанти</a></li>
+              <li class="header-nav-list__item"><a data-nav_go_to="#portfolio" class="nav-list__link header-nav-list__link js-nav"
+                  href="#">Портфоліо</a></li>
+              <li class="header-nav-list__item"><a data-nav_go_to="#price" class="nav-list__link header-nav-list__link js-nav" href="#">Прайс</a></li>
+              <li class="header-nav-list__item"><a data-nav_go_to="#about-me" class="nav-list__link header-nav-list__link js-nav" href="#">Про
+                  мене</a>
+              </li>
+              <li class="header-nav-list__item header-nav-list__item-contacts"><a data-nav_go_to="#contacts"
+                  class="nav-list__link header-nav-list__link js-nav" href="#">Контанти</a></li>
             </ul>
           </div>
         </nav>
@@ -88,7 +91,8 @@
             <h1 class="hero__title" lang="en">Oksana Shagalo</h1>
             <p class="hero__description">Я прагну зупинити мить, де ми відчуваємо себе щасливими, закоханими,
               натхненними та справжніми.</p>
-            <a class="btn hero__btn" href="#order">Замовити</a>
+
+            <a data-nav_go_to="#order" class="btn hero__btn js-nav" href="#">Замовити</a>
           </div>
         </div>
       </section>
@@ -327,8 +331,7 @@
   </footer>
 
 
-  <script src="./js/mobilMenu.js" type="module"></script>
-  <!-- <script src="index.js" type="module"></script> -->
+  <script src="./js/index.js" type="module"></script>
 </body>
 
 </html>

@@ -1,4 +1,4 @@
-
+export { removeAllActiveClasses };
 
 const btnMobilMenu = document.querySelector('.js-toggle-mobil-menu');
 const IconBtnMobilMenu = document.querySelector('#hamburger');
@@ -10,10 +10,7 @@ btnMobilMenu.addEventListener('keydown', toggleMenuKeyDown);
 
 window.matchMedia('(min-width: 768px)').addEventListener('change', e => {
     if (!e.matches) return;
-    MobilMenu.classList.remove('is-open');
-    document.body.classList.remove("modal-open");
-    IconBtnMobilMenu.classList.remove('is-open');
-    IconBtnMobilMenu.classList.remove('is-closed');
+    removeAllActiveClasses()
     btnMobilMenu.setAttribute('aria-expanded', false);
 });
 
@@ -42,4 +39,11 @@ function toggleMenuKeyDown(event) {
     if (event.key === " " || event.key === "Enter" || event.key === "Spacebar") {
         toggleMenu();
     }
+}
+
+function removeAllActiveClasses() {
+    MobilMenu.classList.remove('is-open');
+    document.body.classList.remove("modal-open");
+    IconBtnMobilMenu.classList.remove('is-open');
+    IconBtnMobilMenu.classList.remove('is-closed');
 }
