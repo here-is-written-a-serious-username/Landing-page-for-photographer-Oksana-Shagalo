@@ -111,6 +111,16 @@
         margin-bottom: 30px;
         margin-left: 30px;
     }
+
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+        transform: scale(1.03);
+
+        a {
+            cursor: zoom-in;
+        }
+    }
 }
 
 .grid-item-width1 {
@@ -131,4 +141,9 @@
 
 .grid-item img {
     width: 100%;
+}
+
+.sl-overlay {
+    background-color: $background-color  !important;
+    // sl-overlay-background SimpleLightbox
 }
