@@ -50,11 +50,6 @@
     margin-bottom: -267px;
     pointer-events: none;
 
-    // @media screen and (max-width: 479px) {
-    //         margin-left: 0;
-    //         margin-right: 0;
-    //     }
-
     @media screen and (max-width: 767px) {
         max-width: 300px;
     }
@@ -134,6 +129,22 @@
         width: 380px;
     }
 }
+
+// .grid-item-width1 {
+//     @media screen and (max-width: 1400px) {
+//         width: 25%;
+//     }
+// }
+
+// .grid-item-width2 {
+//     @media screen and (min-width: 768px) and (max-width: 1199px) {
+//         width: 330px;
+//     }
+
+//     @media screen and (min-width: 1200px) and (max-width: 1400px) {
+//         width: 50%;
+//     }
+// }
 
 .gallery__link {
     &:hover {
