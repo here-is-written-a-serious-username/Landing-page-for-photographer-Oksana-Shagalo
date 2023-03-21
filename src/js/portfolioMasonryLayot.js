@@ -12,7 +12,8 @@ var msnry = new Masonry(elem, {
 });
 
 
-import SimpleLightbox from "simplelightbox";
+
+// import SimpleLightbox from "simplelightbox";
 
 
 

@@ -98,6 +98,10 @@
 .grid-item {
     pointer-events: all;
 
+    @media screen and (max-width: 767px) {
+        margin-bottom: 15px;
+    }
+
     @media screen and (min-width: 768px) and (max-width: 1199px) {
         margin-bottom: 15px;
         margin-left: 15px;
@@ -109,13 +113,13 @@
     }
 }
 
-.grid-item-width1 img {
+.grid-item-width1 {
     @media screen and (max-width: 1400px) {
         width: 300px;
     }
 }
 
-.grid-item-width2 img {
+.grid-item-width2 {
     @media screen and (min-width: 768px) and (max-width: 1199px) {
         width: 330px;
     }
@@ -123,4 +127,8 @@
     @media screen and (min-width: 1200px) and (max-width: 1400px) {
         width: 380px;
     }
+}
+
+.grid-item img {
+    width: 100%;
 }
