@@ -143,7 +143,17 @@
     width: 100%;
 }
 
+
+// SimpleLightbox
 .sl-overlay {
     background-color: $background-color  !important;
-    // sl-overlay-background SimpleLightbox
+}
+
+.sl-wrapper {
+
+    .sl-navigation button,
+    .sl-close,
+    .sl-counter {
+        color: $main-color  !important;
+    }
 }
