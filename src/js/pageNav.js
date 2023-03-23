@@ -29,20 +29,3 @@ function scroll(value) {
         behavior: "smooth",
     });
 }
-
-
-
-
-
-// тимчасово поки пуста галерея
-const aaa = document.querySelectorAll('.portfolio-list__link');
-
-(() => {
-    if (aaa.length > 0) {
-        aaa.forEach(el => el.addEventListener("click", bbb));
-    }
-})();
-function bbb(e) {
-    e.preventDefault();
-}
-// тимчасово поки пуста галерея

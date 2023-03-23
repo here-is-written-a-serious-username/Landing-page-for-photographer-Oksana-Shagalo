@@ -136,33 +136,143 @@
       <div class="portfolio-list-wrap">
         <div class="container">
           <ul class="portfolio-list">
-            <li class="portfolio-list__item"><a class="portfolio-list__link" href="#">Сімейна зйомка</a></li>
-            <li class="portfolio-list__item"><a class="portfolio-list__link" href="#">Портретна зйомка</a></li>
-            <li class="portfolio-list__item"><a class="portfolio-list__link" href="#">Б’юті зйомка</a></li>
-            <li class="portfolio-list__item"><a class="portfolio-list__link" href="#">Репортажна зйомка</a></li>
-            <li class="portfolio-list__item"><a class="portfolio-list__link" href="#">Комерційна зйомка</a></li>
+            <li class="portfolio-list__item"><button class="portfolio-list__btn js-btn-filters js-btn-active" type="button"
+                data-filter="family">Сімейна
+                зйомка</button></li>
+            <li class="portfolio-list__item"><button class="portfolio-list__btn js-btn-filters" type="button" data-filter="portrait">Портретна
+                зйомка</button></li>
+            <li class="portfolio-list__item"><button class="portfolio-list__btn js-btn-filters" type="button" data-filter="beauty">Б’юті
+                зйомка</button></li>
+            <li class="portfolio-list__item"><button class="portfolio-list__btn js-btn-filters" type="button" data-filter="reportage">Репортажна
+                зйомка</button></li>
+            <li class="portfolio-list__item"><button class="portfolio-list__btn js-btn-filters" type="button" data-filter="commercial">Комерційна
+                зйомка</button>
+            </li>
           </ul>
         </div>
       </div>
       <div class="grid gallery">
         <div class="stamp"></div>
-        <div class="grid-item grid-item-width1"><a class="gallery__link" href="./img/portfolio/family/Img11.jpg"><img class="gallery__image"
-              src="./img/portfolio/family/Img1.jpg" alt=""></a>
+        <div class="grid-sizer"></div>
+        <div class="gutter-sizer"></div>
+
+        <div class="gallery__group" data-filter="family">
+          <div class="grid-item"><a class="gallery__link" href="./img/portfolio/family/Img11.jpg"><img class="gallery__image"
+                src="./img/portfolio/family/Img1.jpg" alt=""></a>
+          </div>
+          <div class="grid-item"><a class="gallery__link" href="./img/portfolio/family/Img22.jpg"><img class="gallery__image"
+                src="./img/portfolio/family/Img2.jpg" alt=""></a>
+          </div>
+          <div class="grid-item"><a class="gallery__link" href="./img/portfolio/family/Img33.jpg"><img class="gallery__image"
+                src="./img/portfolio/family/Img3.jpg" alt=""></a>
+          </div>
+          <div class="grid-item"><a class="gallery__link" href="./img/portfolio/family/Img44.jpg"><img class="gallery__image"
+                src="./img/portfolio/family/Img4.jpg" alt=""></a>
+          </div>
+          <div class="grid-item grid-item-width2"><a class="gallery__link" href="./img/portfolio/family/Img55.jpg"><img class="gallery__image"
+                src="./img/portfolio/family/Img5.jpg" alt=""></a>
+          </div>
+          <div class="grid-item"><a class="gallery__link" href="./img/portfolio/family/Img66.jpg"><img class="gallery__image"
+                src="./img/portfolio/family/Img6.jpg" alt=""></a>
+          </div>
         </div>
-        <div class="grid-item grid-item-width1"><a class="gallery__link" href="./img/portfolio/family/Img22.jpg"><img class="gallery__image"
-              src="./img/portfolio/family/Img2.jpg" alt=""></a>
+
+        <div class="gallery__group js-is-hidden visually-hidden" data-filter="portrait">
+          <div class="grid-item"><a class="gallery__link" href="./img/portfolio/portrait/img11.jpg"><img class="gallery__image"
+                src="./img/portfolio/portrait/img1.jpg" alt=""></a>
+          </div>
+          <div class="grid-item"><a class="gallery__link" href="./img/portfolio/portrait/img11.jpg"><img class="gallery__image"
+                src="./img/portfolio/portrait/img1.jpg" alt=""></a>
+          </div>
+          <div class="grid-item"><a class="gallery__link" href="./img/portfolio/portrait/img11.jpg"><img class="gallery__image"
+                src="./img/portfolio/portrait/img1.jpg" alt=""></a>
+          </div>
+          <div class="grid-item"><a class="gallery__link" href="./img/portfolio/portrait/img11.jpg"><img class="gallery__image"
+                src="./img/portfolio/portrait/img1.jpg" alt=""></a>
+          </div>
+          <div class="grid-item"><a class="gallery__link" href="./img/portfolio/portrait/img11.jpg"><img class="gallery__image"
+                src="./img/portfolio/portrait/img1.jpg" alt=""></a>
+          </div>
+          <div class="grid-item"><a class="gallery__link" href="./img/portfolio/portrait/img11.jpg"><img class="gallery__image"
+                src="./img/portfolio/portrait/img1.jpg" alt=""></a>
+          </div>
+          <div class="grid-item"><a class="gallery__link" href="./img/portfolio/portrait/img11.jpg"><img class="gallery__image"
+                src="./img/portfolio/portrait/img1.jpg" alt=""></a>
+          </div>
         </div>
-        <div class="grid-item grid-item-width1"><a class="gallery__link" href="./img/portfolio/family/Img33.jpg"><img class="gallery__image"
-              src="./img/portfolio/family/Img3.jpg" alt=""></a>
+
+        <div class="gallery__group js-is-hidden visually-hidden" data-filter="beauty">
+          <div class="grid-item"><a class="gallery__link" href="./img/portfolio/beauty/img11.jpg"><img class="gallery__image"
+                src="./img/portfolio/beauty/img1.jpg" alt=""></a>
+          </div>
+          <div class="grid-item"><a class="gallery__link" href="./img/portfolio/beauty/img22.jpg"><img class="gallery__image"
+                src="./img/portfolio/beauty/img2.jpg" alt=""></a>
+          </div>
+          <div class="grid-item"><a class="gallery__link" href="./img/portfolio/beauty/img11.jpg"><img class="gallery__image"
+                src="./img/portfolio/beauty/img1.jpg" alt=""></a>
+          </div>
+          <div class="grid-item"><a class="gallery__link" href="./img/portfolio/beauty/img22.jpg"><img class="gallery__image"
+                src="./img/portfolio/beauty/img2.jpg" alt=""></a>
+          </div>
+          <div class="grid-item"><a class="gallery__link" href="./img/portfolio/beauty/img11.jpg"><img class="gallery__image"
+                src="./img/portfolio/beauty/img1.jpg" alt=""></a>
+          </div>
+          <div class="grid-item"><a class="gallery__link" href="./img/portfolio/beauty/img22.jpg"><img class="gallery__image"
+                src="./img/portfolio/beauty/img2.jpg" alt=""></a>
+          </div>
+          <div class="grid-item"><a class="gallery__link" href="./img/portfolio/beauty/img11.jpg"><img class="gallery__image"
+                src="./img/portfolio/beauty/img1.jpg" alt=""></a>
+          </div>
+
         </div>
-        <div class="grid-item grid-item-width1"><a class="gallery__link" href="./img/portfolio/family/Img44.jpg"><img class="gallery__image"
-              src="./img/portfolio/family/Img4.jpg" alt=""></a>
+
+        <div class="gallery__group js-is-hidden visually-hidden" data-filter="reportage">
+          <div class="grid-item"><a class="gallery__link" href="./img/portfolio/reportage/img11.jpg"><img class="gallery__image"
+                src="./img/portfolio/reportage/img1.jpg" alt=""></a>
+          </div>
+          <div class="grid-item"><a class="gallery__link" href="./img/portfolio/reportage/img11.jpg"><img class="gallery__image"
+                src="./img/portfolio/reportage/img1.jpg" alt=""></a>
+          </div>
+          <div class="grid-item"><a class="gallery__link" href="./img/portfolio/reportage/img11.jpg"><img class="gallery__image"
+                src="./img/portfolio/reportage/img1.jpg" alt=""></a>
+          </div>
+          <div class="grid-item"><a class="gallery__link" href="./img/portfolio/reportage/img11.jpg"><img class="gallery__image"
+                src="./img/portfolio/reportage/img1.jpg" alt=""></a>
+          </div>
+          <div class="grid-item"><a class="gallery__link" href="./img/portfolio/reportage/img11.jpg"><img class="gallery__image"
+                src="./img/portfolio/reportage/img1.jpg" alt=""></a>
+          </div>
+          <div class="grid-item"><a class="gallery__link" href="./img/portfolio/reportage/img11.jpg"><img class="gallery__image"
+                src="./img/portfolio/reportage/img1.jpg" alt=""></a>
+          </div>
+          <div class="grid-item"><a class="gallery__link" href="./img/portfolio/reportage/img11.jpg"><img class="gallery__image"
+                src="./img/portfolio/reportage/img1.jpg" alt=""></a>
+          </div>
         </div>
-        <div class="grid-item grid-item-width2"><a class="gallery__link" href="./img/portfolio/family/Img55.jpg"><img class="gallery__image"
-              src="./img/portfolio/family/Img5.jpg" alt=""></a>
-        </div>
-        <div class="grid-item grid-item-width1"><a class="gallery__link" href="./img/portfolio/family/Img66.jpg"><img class="gallery__image"
-              src="./img/portfolio/family/Img6.jpg" alt=""></a>
+
+        <div class="gallery__group js-is-hidden visually-hidden" data-filter="commercial">
+          <div class="grid-item"><a class="gallery__link" href="./img/portfolio/commercial/img11.jpg"><img class="gallery__image"
+                src="./img/portfolio/commercial/img1.jpg" alt=""></a>
+          </div>
+          <div class="grid-item"><a class="gallery__link" href="./img/portfolio/commercial/img11.jpg"><img class="gallery__image"
+                src="./img/portfolio/commercial/img1.jpg" alt=""></a>
+          </div>
+          <div class="grid-item"><a class="gallery__link" href="./img/portfolio/commercial/img11.jpg"><img class="gallery__image"
+                src="./img/portfolio/commercial/img1.jpg" alt=""></a>
+          </div>
+          <div class="grid-item"><a class="gallery__link" href="./img/portfolio/commercial/img11.jpg"><img class="gallery__image"
+                src="./img/portfolio/commercial/img1.jpg" alt=""></a>
+          </div>
+          <div class="grid-item"><a class="gallery__link" href="./img/portfolio/commercial/img11.jpg"><img class="gallery__image"
+                src="./img/portfolio/commercial/img1.jpg" alt=""></a>
+          </div>
+          <div class="grid-item"><a class="gallery__link" href="./img/portfolio/commercial/img11.jpg"><img class="gallery__image"
+                src="./img/portfolio/commercial/img1.jpg" alt=""></a>
+          </div>
+          <div class="grid-item"><a class="gallery__link" href="./img/portfolio/commercial/img11.jpg"><img class="gallery__image"
+                src="./img/portfolio/commercial/img1.jpg" alt=""></a>
+          </div>
+
         </div>
       </div>
     </section>
