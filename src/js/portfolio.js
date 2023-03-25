@@ -1,11 +1,12 @@
 
 
 import Masonry from 'masonry-layout';
+var imagesLoaded = require('imagesloaded');
 
-MasonryMarkupMaker();
+var elem = document.querySelector('.grid');
+imagesLoaded(elem).on('progress', MasonryMarkupMaker());
 
 function MasonryMarkupMaker() {
-    var elem = document.querySelector('.grid');
     var msnry = new Masonry(elem, {
         // options
         itemSelector: '.grid-item',
@@ -22,11 +23,26 @@ function MasonryMarkupMaker() {
 import SimpleLightbox from "simplelightbox";
 import "simplelightbox/dist/simple-lightbox.min.css";
 
-new SimpleLightbox('.gallery a', {
+let lightbox1 = new SimpleLightbox('.gallery1 a', {
     fadeSpeed: 200,
     animationSpeed: 200
 });
-
+let lightbox2 = new SimpleLightbox('.gallery2 a', {
+    fadeSpeed: 200,
+    animationSpeed: 200
+});
+let lightbox3 = new SimpleLightbox('.gallery3 a', {
+    fadeSpeed: 200,
+    animationSpeed: 200
+});
+let lightbox4 = new SimpleLightbox('.gallery4 a', {
+    fadeSpeed: 200,
+    animationSpeed: 200
+});
+let lightbox5 = new SimpleLightbox('.gallery5 a', {
+    fadeSpeed: 200,
+    animationSpeed: 200
+});
 
 
 const btnFilters = document.querySelectorAll(".js-btn-filters");
