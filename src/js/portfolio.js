@@ -46,8 +46,6 @@ let lightbox5 = new SimpleLightbox('.gallery5 a', {
 
 
 
-
-
 const btnFilters = document.querySelectorAll(".js-btn-filters");
 const groupsOfPhotos = document.querySelectorAll(".gallery__group");
 
