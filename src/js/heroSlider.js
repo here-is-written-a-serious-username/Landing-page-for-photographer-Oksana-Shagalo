@@ -1,5 +1,5 @@
 const images = ['hero1', 'hero2', 'hero3'];
-let currentIndex = 0;
+let currentIndex = 1;
 const sliderImage = document.querySelector('.hero');
 
 function changeImage() {
@@ -12,8 +12,6 @@ function changeImage() {
     sliderImage.classList.remove(images[currentIndex - 1]);
 
     currentIndex += 1;
-    // sliderImage.style.backgroundImage = `url(${currentImage})`;
-    // console.log(sliderImage.style.backgroundImage = `url(../img/hero/${currentImage})`);
 }
 
 setInterval(changeImage, 15000);
