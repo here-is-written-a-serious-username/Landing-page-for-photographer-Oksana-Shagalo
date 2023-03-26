@@ -1,13 +1,13 @@
 
 
-import Masonry from 'masonry-layout';
-var imagesLoaded = require('imagesloaded');
+import Masonry from "masonry-layout";
+const imagesLoaded = require('imagesloaded');
 
-var elem = document.querySelector('.grid');
-imagesLoaded(elem).on('progress', MasonryMarkupMaker());
+const portfolioPhotosContainer = document.querySelector('.grid');
+imagesLoaded(portfolioPhotosContainer).on('progress', MasonryMarkupMaker());
 
 function MasonryMarkupMaker() {
-    var msnry = new Masonry(elem, {
+    var msnry = new Masonry(portfolioPhotosContainer, {
         // options
         itemSelector: '.grid-item',
         stamp: '.stamp',
@@ -16,7 +16,7 @@ function MasonryMarkupMaker() {
 
         percentPosition: true
     });
-}
+};
 
 
 
@@ -47,7 +47,7 @@ let lightbox5 = new SimpleLightbox('.gallery5 a', {
 
 
 const btnFilters = document.querySelectorAll(".js-btn-filters");
-const groupsOfPhotos = document.querySelectorAll(".gallery__group");
+const categoryOfPhotos = document.querySelectorAll(".gallery__category");
 
 (() => {
     btnFilters.forEach(btn => {
@@ -55,6 +55,7 @@ const groupsOfPhotos = document.querySelectorAll(".gallery__group");
         function onBtnClick() {
             const currentcategory = btn.dataset.filter;
             btnActivetoggle(btn, currentcategory);
+            scrollToPortfolioList();
         }
     });
 })();
@@ -73,16 +74,28 @@ function btnActivetoggle(currentBtn, currentcategory) {
 
 function filterGallery(currentcategory) {
 
-    groupsOfPhotos.forEach(group => {
-        if (currentcategory === group.dataset.filter) {
+    categoryOfPhotos.forEach(category => {
+        if (currentcategory === category.dataset.filter) {
             setTimeout(() => {
-                group.classList.remove('js-is-hidden', 'visually-hidden');
-                imagesLoaded(elem).on('progress', MasonryMarkupMaker());
+                category.classList.remove('js-is-hidden', 'visually-hidden');
+                imagesLoaded(portfolioPhotosContainer).on('progress', MasonryMarkupMaker());
             }, 455);
 
         } else {
-            group.classList.add('js-is-hidden');
-            setTimeout(() => group.classList.add('visually-hidden'), 450);
+            category.classList.add('js-is-hidden');
+            setTimeout(() => category.classList.add('visually-hidden'), 450);
         }
     });
+};
+
+function scrollToPortfolioList() {
+    const goToSection = document.querySelector('.portfolio-list-wrap');
+
+    if (goToSection) {
+        const goToSectionValue = goToSection.getBoundingClientRect().top;
+        window.scrollBy({
+            top: goToSectionValue - 12,
+            behavior: "smooth",
+        });
+    }
 };

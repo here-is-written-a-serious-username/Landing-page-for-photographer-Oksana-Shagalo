@@ -28,4 +28,4 @@ function scroll(value) {
         top: value,
         behavior: "smooth",
     });
-}
+};
