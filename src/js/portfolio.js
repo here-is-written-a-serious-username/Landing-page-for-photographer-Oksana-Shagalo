@@ -45,6 +45,9 @@ let lightbox5 = new SimpleLightbox('.gallery5 a', {
 });
 
 
+
+
+
 const btnFilters = document.querySelectorAll(".js-btn-filters");
 const groupsOfPhotos = document.querySelectorAll(".gallery__group");
 
@@ -74,10 +77,14 @@ function filterGallery(currentcategory) {
 
     groupsOfPhotos.forEach(group => {
         if (currentcategory === group.dataset.filter) {
-            group.classList.remove('js-is-hidden', 'visually-hidden');
+            setTimeout(() => {
+                group.classList.remove('js-is-hidden', 'visually-hidden');
+                imagesLoaded(elem).on('progress', MasonryMarkupMaker());
+            }, 455);
+
         } else {
-            group.classList.add('js-is-hidden', 'visually-hidden');
+            group.classList.add('js-is-hidden');
+            setTimeout(() => group.classList.add('visually-hidden'), 450);
         }
-        MasonryMarkupMaker();
     });
 };
