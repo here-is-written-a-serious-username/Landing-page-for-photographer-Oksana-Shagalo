@@ -27,7 +27,8 @@
     "masonry-layout": "^4.2.2",
     "modern-normalize": "^1.1.0",
     "notiflix": "^3.2.6",
-    "simplelightbox": "^2.11.0"
+    "simplelightbox": "^2.11.0",
+    "swiper": "^10.1.0"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.6.0",

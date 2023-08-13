@@ -12,6 +12,8 @@
 
   <link rel="stylesheet" href="./sass/main.scss">
 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
   <title>Landing-page-for-photographer-Oksana-Shagalo</title>
 
 </head>
@@ -84,20 +86,38 @@
     </header>
 
     <div class="wrap-hero">
-      <section class="hero wrap-bgr-img hero1">
-        <div class="container">
-          <div class="hero-cont">
-            <p class="hero__overtitle" lang="en">photographer</p>
-            <h1 class="hero__title" lang="en">Oksana Shagalo</h1>
-            <p class="hero__description">Я прагну зупинити мить, де ми відчуваємо себе щасливими, закоханими,
-              натхненними та справжніми.</p>
-
-            <a data-nav_go_to="#order" class="btn hero__btn js-nav" href="#">Замовити</a>
-          </div>
+      <section class="wrap-bgr-img swiper">
+        <div class="swiper-wrapper">
+          <div class="hero hero1 swiper-slide"></div>
+          <div class="hero hero2 swiper-slide"></div>
+          <div class="hero hero3 swiper-slide"></div>
         </div>
+
+        <!-- <div class="swiper-button-prev"></div> -->
+        <!-- <div class="swiper-button-next"></div> -->
+
+        <button type="button" class="swiper-btn-prev">
+          <svg class="btn-prev" width="82" height="16">
+            <use href="./img/sprite.svg#btn-prev"></use>
+          </svg>
+        </button>
+        <button type="button" class="swiper-btn-next">
+          <svg class="btn-next" width="82" height="16">
+            <use href="./img/sprite.svg#btn-next"></use>
+          </svg>
+        </button>
+
+        <div class="container hero-cont">
+          <p class="hero__overtitle" lang="en">photographer</p>
+          <h1 class="hero__title" lang="en">Oksana Shagalo</h1>
+          <p class="hero__description">Я прагну зупинити мить, де ми відчуваємо себе щасливими, закоханими,
+            натхненними та справжніми.</p>
+
+          <a data-nav_go_to="#order" class="btn hero__btn js-nav" href="#">Замовити</a>
+        </div>
+
       </section>
     </div>
-
   </div>
 
   <main>
@@ -378,7 +398,7 @@
               <h3 class="form__title">Залишити Заявку</h3>
               <div class="form__fields-wrap">
                 <label class="form__field">
-                  <input class="form__input" name="user_name" type="text" required="" autocomplete="off" placeholder="&nbsp">
+                  <input class="form__input" name="user_name" type="text" required="" autocomplete="off" placeholder="&nbsp" minlength="2">
                   <span class="form__label">Ваше ім’я</span>
                 </label>
                 <label class="form__field">
@@ -431,7 +451,7 @@
           </a>
         </li>
         <li class="social-list__item">
-          <a class="social-list__link" href="https://t.me/TarasKhoma" target="_blank" rel="noreferrer noopener">
+          <a class="social-list__link" href="https://t.me/OksanaShagalo" target="_blank" rel="noreferrer noopener">
             <svg class="social-list__icon" width="48" height="48">
               <use href="./img/sprite.svg#telegram"></use>
             </svg>
