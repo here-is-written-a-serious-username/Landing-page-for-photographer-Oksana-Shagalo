@@ -23,8 +23,8 @@
     }
 }
 
-.stages-list {
 
+.stages-list {
     @media screen and (max-width: 767px) {
         display: flex;
         justify-content: space-between;
@@ -33,6 +33,12 @@
 
     @media screen and (min-width: 768px) and (max-width: 1199px) {
         margin-bottom: 60px;
+
+        .stages-list-left-side {
+            margin-bottom: 60px;
+        }
+
+        // .stages-list-right-side {}
     }
 
     @media screen and (min-width: 1200px) {
@@ -42,13 +48,6 @@
     }
 }
 
-.stages-list-left-side {
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
-        margin-bottom: 60px;
-    }
-}
-
-// .stages-list-right-side {}
 
 .stages-list__item {
     display: flex;
