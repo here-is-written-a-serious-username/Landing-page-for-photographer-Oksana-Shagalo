@@ -1,31 +1,18 @@
 .main_page {
     height: 100vh;
-    min-height: 740px;
+    min-height: 750px;
     max-height: 1028px;
-
     display: flex;
     flex-direction: column;
-
-    // @media screen and (max-width: 767px) {
-    //     // min-height: 540px;
-    //     min-height: 740px;
-    // }
-
-    // @media screen and (min-width: 768px) {
-    //     min-height: 740px;
-    // }
 }
 
 .wrap-hero {
     height: 100vh;
-    min-height: 640px;
+    min-height: 646px;
 }
 
 .hero {
     height: 100%;
-    min-height: 450px;
-    max-height: 1050px;
-
     background-size: 1044px auto;
     background-repeat: no-repeat;
     background-position: top right;
@@ -69,7 +56,7 @@
 .hero__overtitle {
     margin-bottom: 4px;
 
-    font-family: $secondary-font;
+    font-family: $logo-font;
     line-height: calc(70px/48px);
     color: $accent-color;
 
@@ -89,7 +76,7 @@
 .hero__title {
     margin-bottom: 4px;
 
-    font-family: $secondary-font;
+    font-family: $logo-font;
     line-height: calc(140px/96px);
     font-weight: 400;
 
@@ -151,40 +138,51 @@
 
 .swiper-btn-prev,
 .swiper-btn-next {
-    position: absolute;
-    bottom: 24px;
-    z-index: 3;
-    background-color: transparent;
-    border: none;
 
-    .btn-prev,
-    .btn-next {
-        fill: $main-color;
-        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    @media screen and (max-width: 767px) {
+        display: none;
     }
 
-    &:hover,
-    &:focus {
+    @media screen and (min-width: 768px) {
+        position: absolute;
+        bottom: 24px;
+        z-index: 3;
+        background-color: transparent;
+        border: none;
 
         .btn-prev,
         .btn-next {
-            fill: $accent-color;
+            fill: $main-color;
+            transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
         }
-    }
 
-    &:active {
+        &:hover,
+        &:focus {
 
-        .btn-prev,
-        .btn-next {
-            fill: $act-color;
+            .btn-prev,
+            .btn-next {
+                fill: $accent-color;
+            }
+        }
+
+        &:active {
+
+            .btn-prev,
+            .btn-next {
+                fill: $act-color;
+            }
         }
     }
 }
 
 .swiper-btn-prev {
-    right: 212px;
+    @media screen and (min-width: 768px) {
+        right: 212px;
+    }
 }
 
 .swiper-btn-next {
-    right: 100px;
+    @media screen and (min-width: 768px) {
+        right: 100px;
+    }
 }

@@ -82,6 +82,8 @@
     text-align: justify;
 
     .about__text-accent {
+        font-family: $secondary-font;
+        font-size: 18px;
         color: $accent-color;
     }
 

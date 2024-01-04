@@ -4,8 +4,7 @@ const swiper = new Swiper('.swiper', {
 
     loop: true,
     effect: "fade",
-    speed: 1000,
-    // allowTouchMove: false,
+    speed: 800,
 
     autoplay: {
         delay: 6000,
@@ -17,22 +16,4 @@ const swiper = new Swiper('.swiper', {
         nextEl: '.swiper-btn-next',
         prevEl: '.swiper-btn-prev',
     },
-
-    // breakpoints: {
-    //     // 640: {
-    //     //     slidesPerView: 2,
-    //     //     spaceBetween: 20,
-    //     // },
-    //     // 768: {
-    //     //     navigation: {
-    //     //         nextEl: '.swiper-btn-next',
-    //     //         prevEl: '.swiper-btn-prev',
-    //     //     },
-    //     // },
-    //     // 1024: {
-    //     //     slidesPerView: 5,
-    //     //     spaceBetween: 50,
-    //     // },
-    // },
-
 });
