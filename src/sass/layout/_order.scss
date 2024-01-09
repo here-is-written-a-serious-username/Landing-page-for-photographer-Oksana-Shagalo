@@ -137,6 +137,14 @@
     }
 }
 
+.form__input-valid {
+    border: 1px solid #33432B;
+}
+
+.form__input-invalid {
+    border: 1px solid #5E2020;
+}
+
 .submit-btn {
     display: block;
     border-width: 7px 9px;

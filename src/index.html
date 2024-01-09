@@ -12,10 +12,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Sacramento&family=Seaweed+Script&display=swap" rel="stylesheet">
 
-
-  <link rel="stylesheet" href="./sass/main.scss">
-
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+  <link rel="stylesheet" href="./sass/main.scss">
 
   <title>Landing-page-for-photographer-Oksana-Shagalo</title>
 
@@ -308,11 +306,12 @@
                 <h3 class="title" lang="en">Light</h3>
               </div>
               <ul class="price-specification-list">
-                <li class="price-specification-list__item">800 грн.</li>
-                <li class="price-specification-list__item">1 година</li>
-                <li class="price-specification-list__item">50 фото (5 в ретуші)</li>
-                <li class="price-specification-list__item">Готовність 3-4 тижня</li>
-                <li class="price-specification-list__item">Передача через <span lang="en">Google Drive</span></li>
+                <li class="price-specification-list__item"><span class="price__text-accent">800</span> грн.</li>
+                <li class="price-specification-list__item"><span class="price__text-accent">1</span> година</li>
+                <li class="price-specification-list__item"><span class="price__text-accent">50</span> фото (<span class="price__text-accent">5</span>
+                  в ретуші)</li>
+                <li class="price-specification-list__item">Готовність <span class="price__text-accent">3-4</span> тижня</li>
+                <li class="price-specification-list__item">Передача через <span lang="en" class="price__text-accent">Google Drive</span></li>
               </ul>
             </div>
           </li>
@@ -322,11 +321,12 @@
                 <h3 class="title" lang="en">Standart</h3>
               </div>
               <ul class="price-specification-list">
-                <li class="price-specification-list__item">1000 грн.</li>
-                <li class="price-specification-list__item">1,5 години</li>
-                <li class="price-specification-list__item">80 фото (10 в ретуші)</li>
-                <li class="price-specification-list__item">Готовність 2-3 тижня</li>
-                <li class="price-specification-list__item">Передача через <span lang="en">Google Drive</span></li>
+                <li class="price-specification-list__item"><span class="price__text-accent">1000</span> грн.</li>
+                <li class="price-specification-list__item"><span class="price__text-accent">1,5</span> години</li>
+                <li class="price-specification-list__item"><span class="price__text-accent">80</span> фото (<span class="price__text-accent">10</span>
+                  в ретуші)</li>
+                <li class="price-specification-list__item">Готовність <span class="price__text-accent">2-3</span> тижня</li>
+                <li class="price-specification-list__item">Передача через <span lang="en" class="price__text-accent">Google Drive</span></li>
               </ul>
             </div>
           </li>
@@ -336,11 +336,13 @@
                 <h3 class="title" lang="en">Premium</h3>
               </div>
               <ul class="price-specification-list">
-                <li class="price-specification-list__item">1300 грн.</li>
-                <li class="price-specification-list__item">2 години</li>
-                <li class="price-specification-list__item">130 фото (20 в ретуші)</li>
-                <li class="price-specification-list__item">Готовність 2 тижня</li>
-                <li class="price-specification-list__item">Передача через <span lang="en">Google Drive</span></li>
+                <li class="price-specification-list__item"><span class="price__text-accent">1300</span> грн.</li>
+                <li class="price-specification-list__item"><span class="price__text-accent">2</span> години</li>
+                <li class="price-specification-list__item"><span class="price__text-accent">130</span> фото (<span
+                    class="price__text-accent">20</span>
+                  в ретуші)</li>
+                <li class="price-specification-list__item">Готовність <span class="price__text-accent">2</span> тижня</li>
+                <li class="price-specification-list__item">Передача через <span lang="en" class="price__text-accent">Google Drive</span></li>
               </ul>
             </div>
           </li>
@@ -399,7 +401,7 @@
               <h3 class="form__title">Залишити Заявку</h3>
               <div class="form__fields-wrap">
                 <label class="form__field">
-                  <input class="form__input" name="user_name" type="text" required="" autocomplete="off" placeholder=" " minlength="2">
+                  <input class="form__input" name="user_name" type="text" required="" autocomplete="off" placeholder=" " data-length="2">
                   <span class="form__label">Ваше ім’я</span>
                 </label>
                 <label class="form__field">
@@ -407,7 +409,7 @@
                   <span class="form__label">Ваш номер</span>
                 </label>
                 <label class="form__field">
-                  <input class="form__input" name="user_e-mail" type="email" autocomplete="off" placeholder=" ">
+                  <input class="form__input" name="user_email" type="email" autocomplete="off" placeholder=" ">
                   <span class="form__label">Ваш e-mail</span>
                 </label>
               </div>
@@ -420,7 +422,6 @@
 
       </div>
     </section>
-
 
   </main>
 
@@ -482,7 +483,6 @@
 
     </div>
   </footer>
-
 
   <script src="./js/index.js" type="module"></script>
 

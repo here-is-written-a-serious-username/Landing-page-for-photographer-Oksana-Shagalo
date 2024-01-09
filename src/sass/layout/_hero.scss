@@ -15,7 +15,14 @@
     height: 100%;
     background-size: 1044px auto;
     background-repeat: no-repeat;
-    background-position: top right;
+
+    @media screen and (max-width: 767px) {
+        background-position: center;
+    }
+
+    @media screen and (min-width: 768px) {
+        background-position: top right;
+    }
 }
 
 .hero1 {

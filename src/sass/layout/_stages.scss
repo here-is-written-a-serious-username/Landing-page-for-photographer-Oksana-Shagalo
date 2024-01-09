@@ -23,7 +23,6 @@
     }
 }
 
-
 .stages-list {
     @media screen and (max-width: 767px) {
         display: flex;
@@ -47,7 +46,6 @@
         margin-bottom: 248px;
     }
 }
-
 
 .stages-list__item {
     display: flex;
@@ -121,11 +119,13 @@
         position: relative;
         align-self: center;
         margin-bottom: 24px;
+        margin-right: 16px;
     }
 
     @media screen and (min-width: 768px) and (max-width: 1199px) {
         position: relative;
         margin-bottom: 30px;
+        margin-right: 16px;
     }
 
     @media screen and (min-width: 1200px) {
@@ -155,12 +155,25 @@
     }
 
     &:hover {
-        .stages__img {
-            transform: translateX(-14px) translateY(-15px);
+        @media screen and (max-width: 479px) {
+            .stages__img {
+                transform: translateX(-8px) translateY(-12px);
+            }
+
+            &::after {
+                transform: translateX(8px) translateY(12px);
+            }
         }
 
-        &::after {
-            transform: translateX(14px) translateY(15px);
+        @media screen and (min-width: 480px) {
+            .stages__img {
+                transform: translateX(-14px) translateY(-15px);
+            }
+
+            &::after {
+                transform: translateX(14px) translateY(15px);
+            }
         }
+
     }
 }
