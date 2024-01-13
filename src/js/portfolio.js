@@ -1,5 +1,3 @@
-
-
 import Masonry from "masonry-layout";
 const imagesLoaded = require('imagesloaded');
 
@@ -17,7 +15,6 @@ function MasonryMarkupMaker() {
         percentPosition: true
     });
 };
-
 
 
 import SimpleLightbox from "simplelightbox";
@@ -43,7 +40,6 @@ let lightbox5 = new SimpleLightbox('.gallery5 a', {
     fadeSpeed: 200,
     animationSpeed: 200
 });
-
 
 
 const btnFilters = document.querySelectorAll(".js-btn-filters");
