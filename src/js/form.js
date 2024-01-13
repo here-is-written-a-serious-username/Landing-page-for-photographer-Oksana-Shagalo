@@ -1,10 +1,9 @@
-
 import axios from 'axios';
 import { Notify } from 'notiflix';
 Notify.init({
     position: 'right-bottom',
     opacity: 0.8,
-    distance: '60px',
+    distance: '50px',
     fontSize: '18px',
 });
 
@@ -55,13 +54,11 @@ function onFormInput(event) {
 
 function onFormSubmit(event) {
     event.preventDefault();
-
     const formValue = event.currentTarget;
     const hasInvalidInput = Array.from(inputs).some(input => input.classList.contains('form__input-invalid'));
     const hasValidInput = Array.from(inputs).every(input => input.classList.contains('form__input-valid'));
 
     if (!hasInvalidInput && hasValidInput) {
-
         const formDataMessage = `<b>Нова заявка</b>
         <b>Ім’я: ${formData.name}</b>;
         <b>Номер: ${formData.tel}</b>;
@@ -81,12 +78,13 @@ function onFormSubmit(event) {
             })
             .catch((err) => {
                 console.warn(err);
+                Notify.failure('Непередбачувана помилка спробуйте, буть-ласка ще раз.');
             })
             .finally(() => {
-                Notify.success('Дані відправлено.');
+                Notify.success('Заявку надіслано.');
             })
     } else {
-        Notify.failure('Дані не відправлено. Перевірте правильність заповнення.');
+        Notify.failure('Заявку не надіслано. Перевірте правильність заповнення.');
     }
 }
 
