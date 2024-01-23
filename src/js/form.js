@@ -13,6 +13,7 @@ const FORM_KEY = 'formDataState';
 const TOKEN = `6901007510:AAHQKckBW9FnWW3ZXJBWGB2JawOjcxhs374`;
 const CHAT_ID = `-1001937319430`;
 const URL_API = `https://api.telegram.org/bot${TOKEN}/sendMessage`
+// токен потрібно буде ховати на сервері
 const formData = {
     name: "",
     tel: "",
